@@ -10,4 +10,4 @@ async def textprofanity():
     if (request.method == 'POST'):
         text = request.get_json()['text']
         result = await detect(text)
-    return jsonify({'SAFE': result})
+    return jsonify({'Profanity Detected': result})
